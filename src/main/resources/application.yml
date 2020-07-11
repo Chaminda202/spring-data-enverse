@@ -3,24 +3,22 @@ server:
 
 spring:
   application:
-    name: spring-data-enverse
+    name: spring-data-jpa-audit
 
   datasource:
     driverClassName: org.mariadb.jdbc.Driver
-    url: jdbc:mariadb://localhost:3306/spring_data_enverse_db?createDatabaseIfNotExist=true
+    url: jdbc:mariadb://localhost:3306/spring_data_jpa_audit_db?createDatabaseIfNotExist=true
     username: root
     password:
 
   jpa:
     hibernate:
-      ddl-auto: create
+      ddl-auto: update
     properties:
       hibernate:
         show_sql: true
         format_sql: true
 
-#  main:
-#    allow-bean-definition-overriding: true
   jackson:
     deserialization:
       fail-on-unknown-properties: true

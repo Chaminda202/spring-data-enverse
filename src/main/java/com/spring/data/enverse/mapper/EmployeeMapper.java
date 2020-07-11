@@ -24,6 +24,10 @@ public class EmployeeMapper {
                 .occupation(employee.getOccupation())
                 .salary(employee.getSalary())
                 .age(employee.getAge())
+                .createdBy(employee.getCreatedBy())
+                .createdDate(employee.getCreatedDate())
+                .lastModifiedBy(employee.getLastModifiedBy())
+                .lastModifiedDate(employee.getLastModifiedDate())
                 .build();
     }
 }
